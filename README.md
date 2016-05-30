@@ -7,6 +7,22 @@ This script backup folder to S3 bucket and manages remote backup
 * [aws cli](http://docs.aws.amazon.com/cli/latest/userguide/installing.html)
 * [aws cli configured](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html) to write on S3
 
+#Install dependencies
+Ubuntu:
+```
+apt-get install git awscli
+```
+
+Centos:
+```
+yum install git awscli
+```
+
+And then configure awscli:
+```
+aws configure
+```
+
 # Configuration
 Edit these variables in config.sh
 * *s3_backup_bucket*:
